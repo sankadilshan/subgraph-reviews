@@ -17,7 +17,7 @@ async function startApolloServer() {
     }
   );
 
-  const port = 4002;
+  const port = process.env.PORT ?? 4002;
   const subgraphName = 'reviews';
 
   try {
